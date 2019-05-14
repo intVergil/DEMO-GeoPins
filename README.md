@@ -6,8 +6,10 @@ udemy's lesson : [Build a Realtime App with React Hooks and GraphQL](https://www
 - [x] Building our GraphQL Server
 - [x] Social Login with Google OAuth 2.0
 - [x] Managing App State with useReducer / useContext Hooks
-- [] Protecting our App Route
-- [] Building the Header
+- [x] Protecting our App Route
+  - useContext.state.isAuth, switch Login and App
+- [X] Building the Header
+  - add Header and Signout
 - [] Building the Map / User Geolocation
 - [] Creating Blog Area / Adding Draft Pins
 - [] Image Uploads with Cloudinary Web API
