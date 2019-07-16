@@ -10,8 +10,9 @@ udemy's lesson : [Build a Realtime App with React Hooks and GraphQL](https://www
   - useContext.state.isAuth, switch Login and App
 - [X] Building the Header
   - add Header and Signout
-- [] Building the Map / User Geolocation
-- [] Creating Blog Area / Adding Draft Pins
+- [X] Building the Map / User Geolocation
+  - use mapbox api
+- [X] Creating Blog Area / Adding Draft Pins 
 - [] Image Uploads with Cloudinary Web API
 - [] Creating New User Pins
 - [] Making Custom useClient Hook
