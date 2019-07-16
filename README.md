@@ -13,9 +13,9 @@ udemy's lesson : [Build a Realtime App with React Hooks and GraphQL](https://www
 - [X] Building the Map / User Geolocation
   - use mapbox api
 - [X] Creating Blog Area / Adding Draft Pins 
-- [] Image Uploads with Cloudinary Web API
-- [] Creating New User Pins
-- [] Making Custom useClient Hook
+- [X] Image Uploads with Cloudinary Web API
+- [X] Creating New User Pins
+- [X] Making Custom useClient Hook
 - [] Getting / Displaying Created Pins
 - [] Popups and Highlighting New Pins
 - [] Deleting User Pins
