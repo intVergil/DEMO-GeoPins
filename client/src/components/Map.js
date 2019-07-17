@@ -5,9 +5,11 @@ import { withStyles } from "@material-ui/core/styles";
 // import Typography from "@material-ui/core/Typography";
 // import DeleteIcon from "@material-ui/icons/DeleteTwoTone";
 
-import PinIcon from './PinIcon'
-import Context from '../context'
-import Blog from './Blog'
+import Blog from './Blog';
+import PinIcon from './PinIcon';
+import Context from '../context';
+import { GET_PINS_QUERY } from '../graphql/queries'
+import { useClient } from '../client';
 
 const INITIAL_VIEWPORT = {
   latitude: 37.7577,
@@ -16,10 +18,13 @@ const INITIAL_VIEWPORT = {
 }
 
 const Map = ({ classes }) => {
+  const client = useClient();
   const { state, dispatch } = useContext(Context);
+  useEffect(() => {
+    getPins();
+  }, [])
   const [viewport, setViewport] = useState(INITIAL_VIEWPORT);
   const [userPosition, setUserPosition] = useState(null);
-
   useEffect(() => {
     getUserPosition()
   }, [])
@@ -32,6 +37,11 @@ const Map = ({ classes }) => {
         setUserPosition({ latitude, longitude });
       });
     }
+  }
+
+  async function getPins() {
+    const { getPins } = await client.request(GET_PINS_QUERY);
+    dispatch({ type: "GET_PINS", payload: getPins });
   }
 
   function handleMapClick({ lngLat, leftButton }) {
@@ -54,8 +64,8 @@ const Map = ({ classes }) => {
         mapStyle='mapbox://styles/mapbox/streets-v9'
         mapboxApiAccessToken="pk.eyJ1IjoiaW50dmVyZ2lsIiwiYSI6ImNqeTMxdHdpajAxZHgzaHFqaXV3N2VqOXMifQ.c1FZnP56Ou4b8SRAl_9cLg"
         onViewportChange={newViewport => setViewport(newViewport)}
-        {...viewport}
         onClick={handleMapClick}
+        {...viewport}
       >
         {/* Navigation Control */}
         <div className={classes.navigationControl}>
@@ -83,8 +93,19 @@ const Map = ({ classes }) => {
             <PinIcon size={40} color="hotpink" />
           </Marker>
         )}
+        {/* Created Pins */}
+        {state.pins.map(pin => (
+          <Marker
+            key={pin._id}
+            latitude={pin.latitude}
+            longitude={pin.longitude}
+            offsetLeft={-19}
+            offsetTop={-37}
+          >
+            <PinIcon size={40} color="darkblue" />
+          </Marker>
+        ))}
       </ReactMapGL>
-
       {/* Blog Area to add Pin Content */}
       <Blog />
     </div>

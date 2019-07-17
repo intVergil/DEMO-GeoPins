@@ -16,10 +16,10 @@ udemy's lesson : [Build a Realtime App with React Hooks and GraphQL](https://www
 - [X] Image Uploads with Cloudinary Web API
 - [X] Creating New User Pins
 - [X] Making Custom useClient Hook
-- [] Getting / Displaying Created Pins
+- [X] Getting / Displaying Created Pins
 - [] Popups and Highlighting New Pins
 - [] Deleting User Pins
-- [] Displaying Pin Content
+- [] Displaying Pin Contentß
 - [] Add Comment Functionality
 - [] Client Error Handling
 - [] Live Data with GraphQL Subscriptions / Apollo Client
