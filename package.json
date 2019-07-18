@@ -8,7 +8,7 @@
     "dev": "nodemon --ignore client/ server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "intVergil",
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.3.1",
