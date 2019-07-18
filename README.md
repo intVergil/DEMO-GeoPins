@@ -17,8 +17,8 @@ udemy's lesson : [Build a Realtime App with React Hooks and GraphQL](https://www
 - [X] Creating New User Pins
 - [X] Making Custom useClient Hook
 - [X] Getting / Displaying Created Pins
-- [] Popups and Highlighting New Pins
-- [] Deleting User Pins
+- [X] Popups and Highlighting New Pins
+- [X] Deleting User Pins
 - [] Displaying Pin Contentß
 - [] Add Comment Functionality
 - [] Client Error Handling
