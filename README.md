@@ -20,8 +20,8 @@ udemy's lesson : [Build a Realtime App with React Hooks and GraphQL](https://www
 - [X] Popups and Highlighting New Pins
 - [X] Deleting User Pins
 - [X] Displaying Pin Contentß
-- [] Add Comment Functionality
-- [] Client Error Handling
+- [X] Add Comment Functionality
+- [X] Client Error Handling
 - [] Live Data with GraphQL Subscriptions / Apollo Client
 - [] Styling our App for Mobile / useMediaQuery
 - [] Improving our App / Fixing App Issues
