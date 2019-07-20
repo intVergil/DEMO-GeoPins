@@ -8,21 +8,23 @@ udemy's lesson : [Build a Realtime App with React Hooks and GraphQL](https://www
 - [x] Managing App State with useReducer / useContext Hooks
 - [x] Protecting our App Route
   - useContext.state.isAuth, switch Login and App
-- [X] Building the Header
+- [x] Building the Header
   - add Header and Signout
-- [X] Building the Map / User Geolocation
+- [x] Building the Map / User Geolocation
   - use mapbox api
-- [X] Creating Blog Area / Adding Draft Pins 
-- [X] Image Uploads with Cloudinary Web API
-- [X] Creating New User Pins
-- [X] Making Custom useClient Hook
-- [X] Getting / Displaying Created Pins
-- [X] Popups and Highlighting New Pins
-- [X] Deleting User Pins
-- [X] Displaying Pin Contentß
-- [X] Add Comment Functionality
-- [X] Client Error Handling
-- [] Live Data with GraphQL Subscriptions / Apollo Client
+- [x] Creating Blog Area / Adding Draft Pins
+- [x] Image Uploads with Cloudinary Web API
+- [x] Creating New User Pins
+- [x] Making Custom useClient Hook
+- [x] Getting / Displaying Created Pins
+- [x] Popups and Highlighting New Pins
+- [x] Deleting User Pins
+- [x] Displaying Pin Contentß
+- [x] Add Comment Functionality
+- [x] Client Error Handling
+- [x] Live Data with GraphQL Subscriptions / Apollo Client
+  - Todo: test createPin with two side
+  - memo: findOneAndUpdate() must set mongoose.connect(URL,{ useFindAndModify: false })
 - [] Styling our App for Mobile / useMediaQuery
 - [] Improving our App / Fixing App Issues
 - [] Deploying our App

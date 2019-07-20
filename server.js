@@ -6,7 +6,10 @@ const resolvers = require("./resolvers");
 const { findOrCreateUser } = require("./controllers/userController")
 
 mongoose
-  .connect(process.env.MONGO_ATLAS_URL, { useNewUrlParser: true })
+  .connect(process.env.MONGO_ATLAS_URL, {
+    useNewUrlParser: true,
+    useFindAndModify: false
+  })
   .then(() => console.log("mongodb connected"))
   .catch(err => console.error(err));
 
@@ -17,8 +20,8 @@ const server = new ApolloServer({
     let authToken = null;
     let currentUser = null;
     try {
-      authToken = req.headers.authorization      
-      if(authToken){
+      authToken = req.headers.authorization
+      if (authToken) {
         currentUser = await findOrCreateUser(authToken)
       }
     } catch (error) {
