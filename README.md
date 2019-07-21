@@ -25,6 +25,6 @@ udemy's lesson : [Build a Realtime App with React Hooks and GraphQL](https://www
 - [x] Live Data with GraphQL Subscriptions / Apollo Client
   - Todo: test createPin with two side
   - memo: findOneAndUpdate() must set mongoose.connect(URL,{ useFindAndModify: false })
-- [] Styling our App for Mobile / useMediaQuery
+- [X] Styling our App for Mobile / useMediaQuery
 - [] Improving our App / Fixing App Issues
 - [] Deploying our App
