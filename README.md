@@ -26,5 +26,5 @@ udemy's lesson : [Build a Realtime App with React Hooks and GraphQL](https://www
   - Todo: test createPin with two side
   - memo: findOneAndUpdate() must set mongoose.connect(URL,{ useFindAndModify: false })
 - [X] Styling our App for Mobile / useMediaQuery
-- [] Improving our App / Fixing App Issues
+- [X] Improving our App / Fixing App Issues
 - [] Deploying our App
